@@ -1,0 +1,319 @@
+@charset "UTF-8";
+
+body {
+    position: relative;
+}
+.header {
+    position: absolute;
+    width: 100%;
+    height: 75px;
+    background: #24436F;
+    z-index: 0;
+}
+.header-container {
+    position: absolute;
+    height: 75px;
+    left: 175px;
+    width: 1126px;
+    top: 0px;
+}
+.header-small-container {
+    position: absolute;
+    top: 13px;
+}
+.header-small-container .logo {
+    width: 485px;
+    height: 30px;
+}
+
+.logo .logo-frame {
+    position: absolute;
+    width: 122px;
+    height: 22px;
+    left: 0;
+    top: 4px;
+    background: url("../images/Logo.png");
+    text-indent: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.logo .logo-frame a {
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+.logo .text {
+    position: absolute;
+    width: 335px;
+    height: 30px;
+    top: 0px;
+    left: 140px;
+    font-family: "Hiragino Maru Gothic ProN";
+    font-style: normal;
+    font-size: 12px;
+    line-height: 18px;
+    display: flex;
+    align-items: center;
+    color: #BFC9D7;
+}
+.header-container .release {
+    position: absolute;
+    width: 316px;
+    height: 30px;
+    left: 511px;
+    top: 0px;
+}
+
+.release .media {
+    /* media */
+
+
+    position: absolute;
+    left: 4.75%;
+    right: 54.75%;
+    top: 30%;
+    bottom: 26.67%;
+
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    /* or 138% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.release .line1,  .release .line2 {
+    position: absolute;
+    width: 13px;
+    height: 0px;
+    border: 1px solid #BFC9D7;
+    transform: rotate(90deg);
+}
+
+.release .line1 {
+    left: 145px;
+    top: 14px;
+}
+
+.release .line2 {
+    left: 232px;
+    top: 14px;
+}
+
+.release .company {
+    /* company */
+
+
+    position: absolute;
+    left: 51.58%;
+    right: 27.53%;
+    top: 30%;
+    bottom: 26.67%;
+
+    font-family: Hiragino Kaku Gothic ProN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    /* or 138% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+
+.release .login {
+    /* login */
+
+
+    position: absolute;
+    left: 78.8%;
+    right: 4.75%;
+    top: 30%;
+    bottom: 26.67%;
+
+    font-family: Hiragino Kaku Gothic ProN;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 18px;
+    /* or 138% */
+
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.release .background {
+    /* background */
+    position: absolute;
+    width: 316px;
+    height: 30px;
+    left: 0px;
+    top: 0px;
+
+    background: #345584;
+    border-radius: 4px;
+    z-index: 1;
+}
+
+.release .media, .release .line1, .release .line2, .release .company, .release .login {
+    z-index: 2;
+}
+
+.header-small-container .keyword {
+    /* keyword */
+
+
+    position: absolute;
+    width: 288px;
+    height: 30px;
+    left: 838px;
+    top: 0px;
+}
+
+.keyword .input {
+    position: absolute;
+    width: 258px;
+    height: 24px;
+    left: 0px;
+    top: 0px;
+    padding: 3px 15px 2px 15px;
+    background: #FFFFFF;
+    border-radius: 4px 4px 4px 4px;
+    border: none;
+}
+
+.keyword .button {
+    /* button */
+
+
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 258px;
+    top: 0px;
+    z-index: 0;
+}
+
+.button .vector {
+    position: absolute;
+    left: 7px;
+    right: 2.4%;
+    top: 20%;
+    bottom: 23.06%;
+    width: 18px;
+    height: 18px;
+    background: url("../images/Vector.png") no-repeat;
+    z-index: 2;
+}
+
+.button .background {
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    /*left: 258px;*/
+    top: 0px;
+
+    background: #3081C9;
+    border-radius: 0px 4px 4px 0px;
+    z-index: 1;
+}
+
+/* MAIN HEADER*/
+.main-header {
+    /* main-header */
+
+
+    position: absolute;
+    width: 1125px;
+    height: 13px;
+    left: 0px;
+    top: 52px;
+}
+.main-header .line3,  .main-header .line4 {
+    position: absolute;
+    width: 13px;
+    height: 0px;
+    border: 1px solid #BFC9D7;
+    transform: rotate(90deg);
+}
+
+.main-header .line3 {
+    left: 91px;
+    top: 5px;
+}
+
+.main-header .line4 {
+    left: 176px;
+    top: 5px;
+}
+.main-header .press-release {
+    /* プレスリリース */
+
+
+    position: absolute;
+    width: 89px;
+    height: 13px;
+    left: -1px;
+    top: 0px;
+
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #FFFFFF;
+}
+.main-header .ranking {
+    /* ランキング */
+
+
+    position: absolute;
+    width: 66px;
+    height: 13px;
+    left: 108px;
+    top: 0px;
+
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #BFC9D7;
+
+}
+.main-header .TV {
+    /* TV */
+
+
+    position: absolute;
+    width: 20px;
+    height: 13px;
+    left: 194px;
+    top: 0px;
+
+    font-family: "Hiragino Kaku Gothic ProN";
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 19px;
+    display: flex;
+    align-items: center;
+
+    color: #BFC9D7;
+
+}
