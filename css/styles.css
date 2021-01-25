@@ -583,6 +583,9 @@ div.wrapper {
     display: flex;
     align-items: center;
 }
+.content-info .company-name {
+    margin-left: 12px;
+  }
 
 .main-content .title {
     font-family: "Hiragino Kaku Gothic ProN";
