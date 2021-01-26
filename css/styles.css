@@ -3,6 +3,7 @@
 /*HEADER*/
 body {
     position: relative;
+    font-family: "Hiragino Maru Gothic ProN";
 }
 
 .header {
@@ -17,30 +18,30 @@ body {
 .header-container {
     position: relative;
     height: 75px;
-    /*left: 175px;*/
     width: 1126px;
     top: 0px;
     display: flex;
+    flex-direction: column;
 }
 
 .header-small-container {
-    position: relative;
-    top: 13px;
     height: 30px;
     width: 1126px;
+    display: flex;
+    margin-top: 13px;
 }
 
 .header-small-container .logo {
     width: 485px;
     height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
 
 .logo .logo-frame {
-    position: absolute;
     width: 122px;
     height: 22px;
-    left: 0;
-    top: 4px;
     background: url("../images/Logo.png");
     text-indent: 100%;
     white-space: nowrap;
@@ -54,12 +55,10 @@ body {
 }
 
 .logo .text {
-    position: absolute;
     width: 335px;
     height: 30px;
     top: 0px;
     left: 140px;
-    font-family: "Hiragino Maru Gothic ProN";
     font-style: normal;
     font-size: 12px;
     line-height: 18px;
@@ -69,11 +68,13 @@ body {
 }
 
 .header-container .release {
-    position: absolute;
     width: 316px;
     height: 30px;
-    left: 511px;
-    top: 0px;
+    margin-left: 26px;
+    background: #345584;
+    border-radius: 4px;
+    z-index: 1;
+
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -95,98 +96,47 @@ body {
     top: -2px;
 }
 
-/*.release .media {*/
-/*    !* media *!*/
-
-/*    font-family: "Hiragino Kaku Gothic ProN";*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-size: 13px;*/
-/*    line-height: 18px;*/
-/*    !* or 138% *!*/
-
-/*    display: flex;*/
-/*    align-items: center;*/
-
-/*    color: #FFFFFF;*/
-/*}*/
-
-/*.release .company {*/
-/*    !* company *!*/
-
-
-/*    font-family: "Hiragino Kaku Gothic ProN";*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-size: 13px;*/
-/*    line-height: 18px;*/
-/*    !* or 138% *!*/
-
-/*    display: flex;*/
-/*    align-items: center;*/
-
-/*    color: #FFFFFF;*/
-/*}*/
-
-/*.release .login {*/
-/*    !* login *!*/
-
-/*    font-family: "Hiragino Kaku Gothic ProN";*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-size: 13px;*/
-/*    line-height: 18px;*/
-/*    !* or 138% *!*/
-
-/*    display: flex;*/
-/*    align-items: center;*/
-
-/*    color: #FFFFFF;*/
-/*}*/
+/*line*/
+.release .list-item:not(:last-child)::after, .main-header .list-item:not(:last-child)::after {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background-color: #BFC9D7;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    right: -11px;
+    top: 2px;
+}
+.main-header .list-item:not(:last-child)::after {
+    top: 0;
+}
 
 .release .list-item {
-    /* media */
-    font-family: "Hiragino Kaku Gothic ProN";
+    position: relative;
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 18px;
     /* or 138% */
-
     display: flex;
     align-items: center;
     z-index: 2;
     color: #FFFFFF;
 }
 
-.release .background {
-    /* background */
-    position: absolute;
-    width: 316px;
-    height: 30px;
-    left: 0px;
-    top: 0px;
-
-    background: #345584;
-    border-radius: 4px;
-    z-index: 1;
-}
 
 .header-small-container .keyword {
     /* keyword */
-    position: absolute;
     width: 288px;
     height: 30px;
-    left: 838px;
-    top: 0px;
+    margin-left: 11px;
+    display: flex;
 }
 
 .keyword .input {
-    position: absolute;
     width: 228px;
     height: 25px;
-    left: 0px;
-    top: 0px;
     padding: 3px 15px 2px 15px;
     background: #FFFFFF;
     border-radius: 4px 0px 0px 4px;
@@ -199,114 +149,43 @@ body {
 
 .keyword .button {
     /* button */
-    position: absolute;
+    display: flex;
+    justify-items: center;
+    align-items: center;
     width: 30px;
     height: 30px;
-    left: 258px;
-    top: 0px;
-    z-index: 0;
-}
-
-.button .vector {
-    position: absolute;
-    left: 7px;
-    right: 2.4%;
-    top: 20%;
-    bottom: 23.06%;
-    width: 18px;
-    height: 18px;
-    background: url("../images/Vector.png") no-repeat;
-    z-index: 2;
-}
-
-.keyword a:hover::after {
-    font-weight: bold;
-}
-
-.button .background {
-    position: absolute;
-    width: 30px;
-    height: 30px;
-    /*left: 258px;*/
-    top: 0px;
-
     background: #3081C9;
     border-radius: 0px 4px 4px 0px;
-    z-index: 1;
+    z-index: 200;
+}
+.keyword .button .icon {
+    background: url("../images/Vector.png") no-repeat;
+    display: block;
+    width: 18px;
+    height: 18px;
+    margin: auto;
 }
 
 /* MAIN HEADER*/
 .main-header {
     /* main-header */
-
     display: flex;
     justify-content: space-between;
-    position: absolute;
     width: 215px;
     height: 13px;
-    left: 0px;
-    top: 52px;
     align-items: center;
+    margin-top: 9px;
 }
 
-/*.main-header .press-release {*/
-/*    !* プレスリリース *!*/
-/*    width: 89px;*/
-/*    height: 13px;*/
-
-/*    font-family: "Hiragino Kaku Gothic ProN";*/
-/*    font-style: normal;*/
-/*    font-weight: bold;*/
-/*    font-size: 13px;*/
-/*    line-height: 19px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-
-/*    color: #FFFFFF;*/
-/*}*/
-/*.main-header .ranking {*/
-/*    !* ランキング *!*/
-/*    width: 66px;*/
-/*    height: 13px;*/
-
-/*    font-family: "Hiragino Kaku Gothic ProN";*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-size: 13px;*/
-/*    line-height: 19px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-
-/*    color: #BFC9D7;*/
-
-/*}*/
-/*.main-header .TV {*/
-/*    !* TV *!*/
-/*    width: 20px;*/
-/*    height: 13px;*/
-
-/*    font-family: "Hiragino Kaku Gothic ProN";*/
-/*    font-style: normal;*/
-/*    font-weight: normal;*/
-/*    font-size: 13px;*/
-/*    line-height: 19px;*/
-/*    display: flex;*/
-/*    align-items: center;*/
-
-/*    color: #BFC9D7;*/
-/*}*/
 .main-header .list-item {
-    /* TV */
     height: 13px;
-
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
     line-height: 19px;
     display: flex;
     align-items: center;
-
+    position: relative;
 }
 
 .main-header .list-item a {
@@ -324,8 +203,6 @@ body {
 }
 
 .category-header {
-    /* category-header */
-
     width: 100%;
     height: 36px;
     left: 0px;
@@ -338,7 +215,6 @@ body {
     width: 100%;
     height: 36px;
     left: 0px;
-    /*top: 75px;*/
     display: flex;
     justify-content: center;
     align-items: center;
@@ -350,22 +226,16 @@ body {
     justify-content: space-between;
     width: 837px;
     height: 13px;
-    /*left: 302px;*/
     top: 12px;
     list-style-type: none;
-
 }
 
 .categories-list .category-item a {
     top: 1px;
-
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    line-height: 160%;
-    /* or 21px */
-
+    line-height: 21px;
     display: inline-block;
     text-decoration: none;
     transition: color 0.2s, font-weight 0.2s;
@@ -413,8 +283,6 @@ ol.ranking-container {
 }
 
 .article-box .rank-box {
-    /* Rectangle */
-
     position: absolute;
     width: 24px;
     height: 24px;
@@ -427,7 +295,6 @@ ol.ranking-container {
 }
 
 .article-box .image .rank-box::before {
-    /* 1 */
     content: counter(rank-number);
     counter-increment: rank-number;
     display: flex;
@@ -455,15 +322,11 @@ ol.ranking-container {
 }
 
 .content-box .content-text {
-    /* 【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別... */
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    line-height: 140%;
-    /* or 18px */
+    line-height: 18px;
     text-overflow: ellipsis;
-    /* text */
     color: #3B3B3B;
 }
 
@@ -474,11 +337,9 @@ ol.ranking-container {
 }
 
 .content-box .info-text {
-    font-family: "Hiragino Kaku Gothic ProN";
     font-size: 13px;
     font-style: normal;
     line-height: 13px;
-    font-style: normal;
     font-weight: normal;
     display: flex;
     color: #A2A2A2;
@@ -562,7 +423,6 @@ div.wrapper {
     text-overflow: ellipsis;
     color: #3B3B3B;
     overflow: hidden;
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -588,7 +448,6 @@ div.wrapper {
   }
 
 .main-content .title {
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: bold;
     font-size: 24px;
@@ -613,7 +472,6 @@ div.wrapper {
 }
 
 .content-feed .view-more a {
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: bold;
     font-size: 14px;
@@ -637,7 +495,6 @@ div.wrapper {
 }
 
 .side-content .keyword-title {
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: bold;
     font-size: 18px;
@@ -656,15 +513,14 @@ div.wrapper {
     margin-top: 40px;
     justify-content: flex-start;
     border-bottom: 1px solid #E4E4E4;
+    list-style-type: none;
 }
 
 .side-content .keyword-container .keyword a {
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 22px;
-    /* identical to box height, or 22px */
     padding: 0px 8px 0px 8px;
     margin-bottom: 10px;
     display: flex;
@@ -682,12 +538,10 @@ div.wrapper {
 }
 
 .side-content .keyword-container .view-more-keyword a {
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
     line-height: 22px;
-    /* identical to box height, or 22px */
     padding: 0px 8px 0px 8px;
     margin-bottom: 10px;
     display: flex;
@@ -762,14 +616,10 @@ div.footer {
 
 /*}*/
 .footer-list .list-title {
-
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: normal;
     font-size: 13px;
-    line-height: 100%;
-    /* identical to box height, or 13px */
-
+    line-height: 13px;
     display: flex;
     align-items: center;
     margin-bottom: 18px;
@@ -781,9 +631,6 @@ div.footer {
 }
 
 .footer-list .list-item {
-    /* PR TIMESとは */
-
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -803,7 +650,6 @@ div.footer {
 }
 
 .footer-term .term-item {
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: normal;
     font-size: 12px;
@@ -818,7 +664,6 @@ div.footer {
 
 .footer .copyright {
     /* Copyright © PR TIMES Inc. All Rights Reserved. */
-    font-family: "Hiragino Kaku Gothic ProN";
     font-style: normal;
     font-weight: normal;
     font-size: 11px;
