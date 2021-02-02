@@ -4,193 +4,195 @@
     <meta charset="UTF-8">
     <title>PRTimes</title>
     <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/BEM.css">
 </head>
 <body>
 <header class="header">
     <div class="header-container">
-        <div class="header-small-container">
-            <h1 class="logo">
-                <div class="logo-frame"><a href="#PRTIMES">PRTIMES</a></div>
-                <span class="text">プレスリリース・ニュースリリース配信サービスのPR TIMES</span>
+        <div class="header__small-container">
+            <h1 class="header-logo">
+                <a class="header-logo__link">
+                    <div class="header-logo__frame">PRTIMES</div>
+                    <h2 class="header-logo__description">プレスリリース・ニュースリリース配信サービスのPR TIMES</h2>
+                </a>
             </h1>
-            <ul class="release">
-                <li class="list-item"><a href="#press-release">プレスリリースを受信</a></li>
-                <li class="list-item"><a href="#copany">配信を依頼</a></li>
-                <li class="list-item"><a href="#login">ログイン</a></li>
+            <ul class="header-release-list">
+                <li class="header-release-list__item"><a class="header-release-item__link" href="#press-release">プレスリリースを受信</a>
+                </li>
+                <li class="header-release-list__item"><a class="header-release-item__link" href="#copany">配信を依頼</a></li>
+                <li class="header-release-list__item"><a class="header-release-item__link" href="#login">ログイン</a></li>
             </ul>
-            <div class="keyword">
-                <input class="input" type="text" name="keyword" placeholder="キーワードで検索">
-                <a class="button" href="#search">
-                    <span class="icon"></span>
+            <div class="header__search-box">
+                <input class="header-search-box__field" type="text" name="keyword" placeholder="キーワードで検索">
+                <a class="header-search-box__button" href="#search">
+                    <span class="header-search-box-button__icon"></span>
                 </a>
             </div>
         </div>
-        <ul class="main-header">
-            <li class="list-item active"><a href="#press-release">プレスリリース</a></li>
-            <li class="list-item"><a href="#ranking">ランキング</a></li>
-            <li class="list-item"><a href="#TV">TV</a></li>
+        <ul class="main-header__list">
+            <li class="main-header__item is-active"><a class="main-header-item__link" href="#press-release">プレスリリース</a>
+            </li>
+            <li class="main-header__item"><a class="main-header-item__link" href="#ranking">ランキング</a></li>
+            <li class="main-header__item"><a class="main-header-item__link" href="#TV">TV</a></li>
         </ul>
     </div>
 </header>
-<div class="category-header">
-    <div class="categories">
-        <ul class="categories-list">
-            <li class="category-item active"><a href="#総合">総合</a></li>
-            <li class="category-item"><a href="#">テクノロジー</a></li>
-            <li class="category-item"><a href="#">モバイル</a></li>
-            <li class="category-item"><a href="#">アプリ</a></li>
-            <li class="category-item"><a href="#">エンタメ</a></li>
-            <li class="category-item"><a href="#">ビューティー</a></li>
-            <li class="category-item"><a href="#">ファッション</a></li>
-            <li class="category-item"><a href="#">ライフスタイル</a></li>
-            <li class="category-item"><a href="#">ビジネス</a></li>
-            <li class="category-item"><a href="#">グルメ</a></li>
-            <li class="category-item"><a href="#">スポーツ</a></li>
-        </ul>
-    </div>
+<div class="header__categories">
+    <ul class="header-categories__list">
+        <li class="header-categories__item"><a class="header-categories-item__link is-active" href="#総合">総合</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">テクノロジー</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">モバイル</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">アプリ</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">エンタメ</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">ビューティー</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">ファッション</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">ライフスタイル</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">ビジネス</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">グルメ</a></li>
+        <li class="header-categories__item"><a class="header-categories-item__link" href="#">スポーツ</a></li>
+    </ul>
 </div>
-<div class="ranking">
-    <ol class="ranking-container">
+<div class="ranking-container">
+    <ol class="ranking__list">
         <li>
-            <a class="article-box" href="#rank1">
-                <div class="image">
+            <a class="ranking__item" href="#rank1">
+                <div class="ranking-articles__image-container">
                     <img src="images/article/スクリーンショット%202019-06-25%2016.20.png" 　alt="スクリーンショット">
-                    <div class="rank-box">
+                    <div class="ranking-articles-image__rank-number">
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content-box">
-                        <div class="content-text">
-                            <span>新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...</span>
+                <div class="ranking-articles__content-container">
+                    <div class="ranking-articles__content-box">
+                        <div class="ranking-articles-content__title">
+                            <h5>新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...</h5>
                         </div>
-                        <div class="content-info">
-                            <div class="uploaded-time">
-                                <span class="clock-icon"></span>
-                                <time class="info-text">2時間前</time>
+                        <div class="ranking-articles__info">
+                            <div class="ranking-articles-info__uploaded-time">
+                                <span class="ranking-articles-uploaded-time__icon"></span>
+                                <time class="ranking-articles-uploaded-time__time">2時間前</time>
                             </div>
-                            <span class="info-text">いちから株式会社</span>
-                            <span class="info-text">PV 00,000 / UU 00,000</span>
+                            <span class="ranking-articles-info__company-name">いちから株式会社</span>
+                            <span class="ranking-articles-info__pv">PV 00,000 / UU 00,000</span>
                         </div>
                     </div>
                 </div>
             </a>
         </li>
         <li>
-            <a class="article-box" href="#rank2">
-                <div class="image">
+            <a class="ranking__item" href="#rank2">
+                <div class="ranking-articles__image-container">
                     <img src="images/article%202/スクリーンショット%202019-06-25%2016.20.png" 　alt="スクリーンショット">
-                    <div class="rank-box">
+                    <div class="ranking-articles-image__rank-number">
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content-box">
-                        <div class="content-text">
-                            <span>従業員に国内最大級の「危険手当」を支給</span>
+                <div class="ranking-articles__content-container">
+                    <div class="ranking-articles__content-box">
+                        <div class="ranking-articles-content__title">
+                            <h5>従業員に国内最大級の「危険手当」を支給</h5>
                         </div>
-                        <div class="content-info">
-                            <div class="uploaded-time">
-                                <span class="clock-icon"></span>&nbsp
-                                <time class="info-text">1時間前</time>
+                        <div class="ranking-articles__info">
+                            <div class="ranking-articles-info__uploaded-time">
+                                <span class="ranking-articles-uploaded-time__icon"></span>&nbsp
+                                <time class="ranking-articles-uploaded-time__time">1時間前</time>
                             </div>
-                            <span class="info-text">株式会社SHIFT</span>
-                            <span class="info-text">PV 00,000 / UU 00,000</span>
+                            <span class="ranking-articles-info__company-name">株式会社SHIFT</span>
+                            <span class="ranking-articles-info__pv">PV 00,000 / UU 00,000</span>
                         </div>
                     </div>
                 </div>
             </a>
         </li>
         <li>
-            <a class="article-box" href="#rank3">
-                <div class="image">
+            <a class="ranking__item" href="#rank3">
+                <div class="ranking-articles__image-container">
                     <img src="images/article%203/スクリーンショット%202019-06-25%2016.20.png" 　alt="スクリーンショット">
-                    <div class="rank-box">
+                    <div class="ranking-articles-image__rank-number">
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content-box">
-                        <div class="content-text">
-                            <span>【医療関係優先期間終了】洗える布マスク「スーパーフィット」の一般販売...</span>
+                <div class="ranking-articles__content-container">
+                    <div class="ranking-articles__content-box">
+                        <div class="ranking-articles-content__title">
+                            <h5>【医療関係優先期間終了】洗える布マスク「スーパーフィット」の一般販売...</h5>
                         </div>
-                        <div class="content-info">
-                            <div class="uploaded-time">
-                                <span class="clock-icon"></span>&nbsp
-                                <time class="info-text">2時間前</time>
+                        <div class="ranking-articles__info">
+                            <div class="ranking-articles-info__uploaded-time">
+                                <span class="ranking-articles-uploaded-time__icon"></span>&nbsp
+                                <time class="ranking-articles-uploaded-time__time">2時間前</time>
                             </div>
-                            <span class="info-text">いちから株式会社</span>
-                            <span class="info-text">PV 00,000 / UU 00,000</span>
+                            <span class="ranking-articles-info__company-name">いちから株式会社</span>
+                            <span class="ranking-articles-info__pv">PV 00,000 / UU 00,000</span>
                         </div>
                     </div>
                 </div>
             </a>
         </li>
         <li>
-            <a class="article-box" href="#rank4">
-                <div class="image">
+            <a class="ranking__item" href="#rank4">
+                <div class="ranking-articles__image-container">
                     <img src="images/article%204/スクリーンショット%202019-06-25%2016.20.png" 　alt="スクリーンショット">
-                    <div class="rank-box">
+                    <div class="ranking-articles-image__rank-number">
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content-box">
-                        <div class="content-text">
-                            <span>【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...</span>
+                <div class="ranking-articles__content-container">
+                    <div class="ranking-articles__content-box">
+                        <div class="ranking-articles-content__title">
+                            <h5>【新型コロナ感染者数マップ】緊急事態宣言発令状況やを東京都市区町村別...</h5>
                         </div>
-                        <div class="content-info">
-                            <div class="uploaded-time">
-                                <span class="clock-icon"></span>
-                                <time class="info-text">200年3月10</time>
+                        <div class="ranking-articles__info">
+                            <div class="ranking-articles-info__uploaded-time">
+                                <span class="ranking-articles-uploaded-time__icon"></span>
+                                <time class="ranking-articles-uploaded-time__time">200年3月10</time>
                             </div>
-                            <span class="info-text">いちから株式会社</span>
-                            <span class="info-text">PV 00,000 / UU 00,000</span>
+                            <span class="ranking-articles-info__company-name">いちから株式会社</span>
+                            <span class="ranking-articles-info__pv">PV 00,000 / UU 00,000</span>
                         </div>
                     </div>
                 </div>
             </a>
         </li>
         <li>
-            <a class="article-box" href="#rank5">
-                <div class="image">
+            <a class="ranking__item" href="#rank5">
+                <div class="ranking-articles__image-container">
                     <img src="images/article%205/スクリーンショット%202019-06-25%2016.20.png" 　alt="スクリーンショット">
-                    <div class="rank-box">
+                    <div class="ranking-articles-image__rank-number">
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content-box">
-                        <div class="content-text">
-                            <span>ニコニコ超会議2020 東大寺から疫病退散を祈願 法要と国宝</span>
+                <div class="ranking-articles__content-container">
+                    <div class="ranking-articles__content-box">
+                        <div class="ranking-articles-content__title">
+                            <h5>ニコニコ超会議2020 東大寺から疫病退散を祈願 法要と国宝</h5>
                         </div>
-                        <div class="content-info">
-                            <div class="uploaded-time">
-                                <span class="clock-icon"></span>&nbsp
-                                <time class="info-text">2時間前</time>
+                        <div class="ranking-articles__info">
+                            <div class="ranking-articles-info__uploaded-time">
+                                <span class="ranking-articles-uploaded-time__icon"></span>&nbsp
+                                <time class="ranking-articles-uploaded-time__time">2時間前</time>
                             </div>
-                            <span class="info-text">いちから株式会社</span>
-                            <span class="info-text">PV 00,000 / UU 00,000</span>
+                            <span class="ranking-articles-info__company-name">いちから株式会社</span>
+                            <span class="ranking-articles-info__pv">PV 00,000 / UU 00,000</span>
                         </div>
                     </div>
                 </div>
             </a>
         </li>
         <li>
-            <a class="article-box" href="#rank6">
-                <div class="image">
+            <a class="ranking__item" href="#rank6">
+                <div class="ranking-articles__image-container">
                     <img src="images/article%206/スクリーンショット%202019-06-25%2016.20.png" 　alt="スクリーンショット">
-                    <div class="rank-box">
+                    <div class="ranking-articles-image__rank-number">
                     </div>
                 </div>
-                <div class="content">
-                    <div class="content-box">
-                        <div class="content-text">
-                            <span>東京証券取引所市場第一部へのお知らせ</span>
+                <div class="ranking-articles__content-container">
+                    <div class="ranking-articles__content-box">
+                        <div class="ranking-articles-content__title">
+                            <h5>東京証券取引所市場第一部へのお知らせ</h5>
                         </div>
-                        <div class="content-info">
-                            <div class="uploaded-time">
-                                <span class="clock-icon"></span>&nbsp
-                                <time class="info-text">2時間前</time>
+                        <div class="ranking-articles__info">
+                            <div class="ranking-articles-info__uploaded-time">
+                                <span class="ranking-articles-uploaded-time__icon"></span>&nbsp
+                                <time class="ranking-articles-uploaded-time__time">2時間前</time>
                             </div>
-                            <span class="info-text">いちから株式会社</span>
-                            <span class="info-text">PV 00,000 / UU 00,000</span>
+                            <span class="ranking-articles-info__company-name">いちから株式会社</span>
+                            <span class="ranking-articles-info__pv">PV 00,000 / UU 00,000</span>
                         </div>
                     </div>
                 </div>
@@ -198,216 +200,216 @@
         </li>
     </ol>
 </div>
-<div class="wrapper">
+<div class="main-wrapper">
     <div class="main-content-container">
         <div class="main-content">
-            <h3 class="title">新着プレスリリース</h3>
-            <div class="content-feed">
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+            <h3 class="main-content__title">新着プレスリリース</h3>
+            <div class="main-content__content-feed">
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <div class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <div class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </div>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
-                            <time class="info-text">2時間前</time>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
+                            <time class="main-content-article-uploaded-time__time">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">創業10年で10件の特許を取得！</h5>
-                        <div class="content-image">
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">創業10年で10件の特許を取得！</h5>
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
 
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <a href="#article" class="content-box">
-                    <div class="box-body">
-                        <h5 class="content-title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
+                <a href="#article" class="main-content-feed__article-box">
+                    <div class="main-content-article-box__body">
+                        <h5 class="main-content-article-box__title">BRITA JapanがG20のユース向け公式付属会議「Y20 SUMMIT 2019 JAPAN」に登壇！マイボトル化推進...
                         </h5>
-                        <div class="content-image">
+                        <div class="main-content-article-box__image">
                             <img src="images/スクリーンショット%202019-06-03%2017.27.png">
                         </div>
                     </div>
-                    <div class="content-info">
-                        <div class="uploaded-time">
-                            <span class="clock-icon"></span><span>&nbsp</span>
+                    <div class="main-content-article-box__info">
+                        <div class="main-content-article-info__uploaded-time">
+                            <span class="main-content-article-uploaded-time__icon"></span><span>&nbsp</span>
                             <time class="info-text">2時間前</time>
                         </div>
-                        <span class="info-text company-name">BRITA Japan株式会社</span>
+                        <span class="main-content-article-info__company-name">BRITA Japan株式会社</span>
                     </div>
                 </a>
-                <div class="view-more"><a href="#view-more">もっと見る</a></div>
+                <div class="main-content__view-more-button"><a class="main-content-view-more-button__link" href="#view-more">もっと見る</a></div>
             </div>
         </div>
         <div class="side-content">
-            <h3 class="keyword-title">今注目のキーワード</h3>
-            <ul class="keyword-container">
-                <li class="keyword"><a href="">桜</a></li>
-                <li class="keyword"><a href="">令和</a></li>
-                <li class="keyword"><a href="">テレワーク</a></li>
-                <li class="keyword"><a href="">#AprilDream</a></li>
-                <li class="keyword"><a href="">電子マネー</a></li>
-                <li class="keyword"><a href="">令和</a></li>
-                <span class="view-more-keyword"><a href="">もっと見る</a></span>
+            <h3 class="side-content__keyword-title">今注目のキーワード</h3>
+            <ul class="side-content-keyword__list">
+                <li class="side-content-keyword__item"><a class="side-content-keyword__link" href="">桜</a></li>
+                <li class="side-content-keyword__item"><a class="side-content-keyword__link" href="">令和</a></li>
+                <li class="side-content-keyword__item"><a class="side-content-keyword__link" href="">テレワーク</a></li>
+                <li class="side-content-keyword__item"><a class="side-content-keyword__link" href="">#AprilDream</a></li>
+                <li class="side-content-keyword__item"><a class="side-content-keyword__link" href="">電子マネー</a></li>
+                <li class="side-content-keyword__item"><a class="side-content-keyword__link" href="">令和</a></li>
+                <span class="side-content__view-more-keyword"><a class="side-content-view-more-keyword__link" href="">もっと見る</a></span>
             </ul>
         </div>
     </div>
@@ -415,47 +417,47 @@
 <div class="footer">
     <div class="footer-container">
         <div class="footer-list">
-            <div class="news-list">
-                <h5 class="list-title">ニュースリリース配信サービス</h5>
-                <h6 class="list-item"><a class="list-item-link" href="#prtimes">PR TIMESとは</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">料金・プラン</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">プレスリリースを受信したい方へ</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">プレスリリースを配信したい方へ</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">ログイン</a></h6>
+            <div class="footer__news-list column-direction">
+                <h5 class="footer-list__title">ニュースリリース配信サービス</h5>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">PR TIMESとは</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">料金・プラン</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">プレスリリースを受信したい方へ</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">プレスリリースを配信したい方へ</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">ログイン</a></h6>
             </div>
-            <div class="recommend-list">
-                <h5 class="list-title">レコメンドサービス</h5>
-                <h6 class="list-item"><a class="list-item-link" href="#">無料FAQならTayori</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">無料メールフォームならTayori</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">タスク・プロジェクト管理ツールのJooto</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">PR TIMES TV</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">PR TIMES LIVE</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">PR TIMES MAGAZINE</a></h6>
+            <div class="footer__recommend-list column-direction">
+                <h5 class="footer-list__title">レコメンドサービス</h5>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">無料FAQならTayori</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">無料メールフォームならTayori</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">タスク・プロジェクト管理ツールのJooto</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">PR TIMES TV</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">PR TIMES LIVE</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">PR TIMES MAGAZINE</a></h6>
             </div>
-            <div class="advertise-list">
-                <h5 class="list-title blank-line"></h5>
-                <h6 class="list-item"><a class="list-item-link" href="#">クリッピング</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">料金・広告ならAdGang</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">無料占い・今週の運勢ならisuta</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">無料恋愛占いならならisuta</a></h6>
+            <div class="footer__advertise-list column-direction">
+                <h5 class="footer-list__title blank-line"></h5>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">クリッピング</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">料金・広告ならAdGang</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">無料占い・今週の運勢ならisuta</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">無料恋愛占いならならisuta</a></h6>
             </div>
-            <div class="social-network-list">
-                <h5 class="list-title">PR TIMES公式SNS</h5>
-                <h6 class="list-item"><a class="list-item-link" href="#">公式Facebookページ</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">Facebookカテゴリ</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">公式Twitterページ</a></h6>
-                <h6 class="list-item"><a class="list-item-link" href="#">Twitterカテゴリ</a></h6>
+            <div class="footer__social-network-list column-direction">
+                <h5 class="footer-list__title">PR TIMES公式SNS</h5>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">公式Facebookページ</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">Facebookカテゴリ</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">公式Twitterページ</a></h6>
+                <h6 class="footer-list__item"><a class="footer-list-item__link" href="">Twitterカテゴリ</a></h6>
             </div>
         </div>
-        <ul class="footer-term">
-            <li class="term-item"><a href="#">会社概要</a></li>
-            <li class="term-item"><a href="#">プライバシーポリシー</a></li>
-            <li class="term-item"><a href="#">情報セキュリティ基本方針</a></li>
-            <li class="term-item"><a href="#">プレスリリース掲載基準</a></li>
-            <li class="term-item"><a href="#">利用規約</a></li>
-            <li class="term-item"><a href="#">お問い合わせ</a></li>
-        </ul>
-        <div class="copyright">Copyright © PR TIMES Inc. All Rights Reserved.</div>
+        <div class="footer__term">
+            <h6 class="footer-term__item"><a class="footer-term-item__link" href="#">会社概要</a></h6>
+            <h6 class="footer-term__item"><a class="footer-term-item__link" href="#">プライバシーポリシー</a></h6>
+            <h6 class="footer-term__item"><a class="footer-term-item__link" href="#">情報セキュリティ基本方針</a></h6>
+            <h6 class="footer-term__item"><a class="footer-term-item__link" href="#">プレスリリース掲載基準</a></h6>
+            <h6 class="footer-term__item"><a class="footer-term-item__link" href="#">利用規約</a></h6>
+            <h6 class="footer-term__item"><a class="footer-term-item__link" href="#">お問い合わせ</a></h6>
+        </div>
+        <div class="footer__copyright">Copyright © PR TIMES Inc. All Rights Reserved.</div>
     </div>
 </div>
 </body>
