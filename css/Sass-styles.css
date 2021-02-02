@@ -1,13 +1,15 @@
 @charset "UTF-8";
+/* ========  index.html stylesheet file ========= */
 body {
   position: relative;
   font-family: "Hiragino Kaku Gothic ProN";
 }
 
+/* header */
 .header {
   width: 100%;
   height: 75px;
-  background: #24436F;
+  background: #24436f;
   z-index: 0;
   display: flex;
   justify-content: center;
@@ -56,7 +58,7 @@ body {
   line-height: 18px;
   display: flex;
   align-items: center;
-  color: #BFC9D7;
+  color: #bfc9d7;
 }
 
 .header-release-list {
@@ -97,7 +99,7 @@ body {
   content: '';
   width: 1px;
   height: 13px;
-  background-color: #BFC9D7;
+  background-color: #bfc9d7;
   position: absolute;
   right: -11px;
   top: 2px;
@@ -130,7 +132,7 @@ body {
   align-items: center;
   width: 30px;
   height: 30px;
-  background: #3081C9;
+  background: #3081c9;
   border-radius: 0 4px 4px 0;
   z-index: 200;
 }
@@ -164,18 +166,18 @@ body {
   position: relative;
 }
 
-.main-header__item:not(:last-child):after {
+.main-header__item:not(:last-child)::after {
   content: '';
   width: 1px;
   height: 13px;
-  background-color: #BFC9D7;
+  background-color: #bfc9d7;
   position: absolute;
   right: -11px;
 }
 
 .main-header__item .main-header-item__link {
-  color: #bfc9d7;
   text-decoration: none;
+  color: #bfc9d7;
 }
 
 .main-header__item .main-header-item__link:hover {
@@ -201,12 +203,12 @@ body {
 }
 
 .header-categories__list {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
   width: 837px;
   height: 13px;
   top: 12px;
-  list-style-type: none;
 }
 
 .header-categories-item__link {
@@ -228,8 +230,8 @@ body {
   font-weight: bold;
 }
 
-/*END HEADER*/
-/*RANKING*/
+/* end header */
+/* ranking */
 .ranking-container {
   height: 263px;
   width: 100%;
@@ -240,11 +242,11 @@ body {
 }
 
 .ranking__list {
+  list-style-type: none;
   display: flex;
   justify-content: space-between;
   width: 1126px;
   counter-reset: rank-number;
-  list-style-type: none;
 }
 
 .ranking__item {
@@ -256,7 +258,7 @@ body {
 }
 
 .ranking__item:hover {
-  text-decoration: underline #000000;
+  text-decoration: underline #000;
 }
 
 .ranking-articles__image-container {
@@ -272,7 +274,6 @@ body {
   height: 24px;
   left: 0;
   top: 0;
-  /* brand_color */
   display: flex;
   justify-content: center;
   background: #294c7a;
@@ -282,7 +283,7 @@ body {
   content: counter(rank-number);
   counter-increment: rank-number;
   display: flex;
-  font-family: "Roboto";
+  font-family: 'Roboto', sans-serif;
   font-style: italic;
   font-weight: bold;
   font-size: 17px;
@@ -331,9 +332,9 @@ body {
 }
 
 .ranking-articles__info .ranking-articles-info__uploaded-time .ranking-articles-uploaded-time__icon {
+  background: url("../images/article/icon.svg");
   width: 15px;
   height: 14px;
-  background: url("../images/article/icon.svg");
   background-size: 100% 100%;
   display: inline-block;
 }
@@ -365,16 +366,16 @@ body {
 }
 
 .main-content-feed__article-box {
+  text-decoration: none;
   position: relative;
   padding-top: 15px;
   width: 380px;
   height: 118px;
   border-bottom: 1px solid #e4e4e4;
-  text-decoration: none;
 }
 
 .main-content-feed__article-box:hover {
-  text-decoration: underline #000000;
+  text-decoration: underline #000;
 }
 
 .main-content-article-box__body {
@@ -434,7 +435,7 @@ body {
   width: 110px;
   height: 38px;
   background: #3081c9;
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.24);
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.24);
   border-radius: 2px;
   margin: 30px auto 103px;
 }
@@ -444,7 +445,7 @@ body {
   font-weight: bold;
   font-size: 14px;
   line-height: 25px;
-  /*179%*/
+  /* 179% */
   text-decoration: none;
   color: #fff;
   width: 110px;
@@ -470,8 +471,8 @@ body {
   line-height: 27px;
   display: flex;
   align-items: center;
-  /* text */
   color: #3b3b3b;
+  /* text */
 }
 
 .side-content-keyword__list {
@@ -492,7 +493,7 @@ body {
   margin-bottom: 10px;
   display: flex;
   align-items: center;
-  background: #F1F1F1;
+  background: #f1f1f1;
   border-radius: 11px;
   color: #3b3b3b;
   text-decoration: none;
@@ -505,6 +506,7 @@ body {
 }
 
 .side-content-view-more-keyword__link {
+  text-decoration: none;
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -518,7 +520,6 @@ body {
   border-radius: 11px;
   color: #3b3b3b;
   margin-right: 10px;
-  text-decoration: none;
 }
 
 .side-content-view-more-keyword__link:hover {
@@ -526,8 +527,8 @@ body {
   color: #3081c9;
 }
 
-/*END MAIN CONTENT*/
-/*#FOOTER*/
+/* end main content */
+/* footer */
 .footer {
   height: 356px;
   background: #fafafa;
@@ -565,11 +566,12 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 18px;
-  color: #000000;
+  color: #000;
 }
 
-.footer-list__title .blank-line {
-  line-height: 13px;
+.footer-list .blank-line {
+  width: 100%;
+  height: 13px;
 }
 
 .footer-list__item {
@@ -590,7 +592,7 @@ body {
 }
 
 .footer-list__item .footer-list-item__link:hover {
-  color: #797979;
+  text-decoration: underline #797979;
 }
 
 .footer__term {
@@ -612,6 +614,10 @@ body {
   margin-right: 20px;
 }
 
+.footer__term .footer-term-item__link:hover {
+  text-decoration: underline #797979;
+}
+
 .footer__copyright {
   /* Copyright © PR TIMES Inc. All Rights Reserved. */
   font-style: normal;
@@ -623,3 +629,5 @@ body {
   color: #797979;
   margin: 18px 20px 9px 0;
 }
+
+/* end footer */

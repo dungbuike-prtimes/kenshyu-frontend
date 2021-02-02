@@ -620,10 +620,11 @@ body {
       align-items: center;
       margin-bottom: 18px;
       color: #000;
+    }
 
-      .blank-line {
-        line-height: 13px;
-      }
+    .blank-line {
+      width: 100%;
+      height: 13px;
     }
 
     &__item {
@@ -642,7 +643,7 @@ body {
         color: #797979;
 
         &:hover {
-          color: #797979;
+          text-decoration: underline #797979;
         }
       }
     }
@@ -666,6 +667,11 @@ body {
       align-items: center;
       color: #797979;
       margin-right: 20px;
+
+      &:hover {
+        text-decoration: underline #797979;
+      }
+
     }
   }
 
