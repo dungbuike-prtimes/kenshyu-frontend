@@ -15,6 +15,15 @@ $font-family: "Hiragino Kaku Gothic ProN";
   background-color: #BFC9D7;
   position: absolute;
 }
+@mixin logo-background {
+  background: url("../images/Logo.png");
+}
+@mixin search-icon-background {
+  background: url("../images/Vector.png") no-repeat;
+}
+@mixin time-icon-background {
+  background: url("../images/article/icon.svg");
+}
 body {
   position: relative;
   font-family: $font-family;
@@ -53,9 +62,9 @@ body {
     justify-content: space-between;
   }
   &__frame {
+    @include logo-background;
     width: 122px;
     height: 22px;
-    background: url("../images/Logo.png");
     text-indent: 100%;
     white-space: nowrap;
     overflow: hidden;
@@ -63,7 +72,7 @@ body {
   &__description {
     width: 335px;
     height: 30px;
-    top: 0px;
+    top: 0;
     left: 140px;
     font-style: normal;
     font-size: 12px;
@@ -126,7 +135,7 @@ body {
     height: 25px;
     padding: 3px 15px 2px 15px;
     background: #FFFFFF;
-    border-radius: 4px 0px 0px 4px;
+    border-radius: 4px 0 0 4px;
     border: none;
 
     &:focus {
@@ -142,11 +151,11 @@ body {
     width: 30px;
     height: 30px;
     background: #3081C9;
-    border-radius: 0px 4px 4px 0px;
+    border-radius: 0 4px 4px 0;
     z-index: 200;
 
     .header-search-box-button__icon {
-      background: url("../images/Vector.png") no-repeat;
+      @include search-icon-background;
       display: block;
       width: 18px;
       height: 18px;
@@ -198,7 +207,7 @@ body {
 .header__categories {
   width: 100%;
   height: 36px;
-  left: 0px;
+  left: 0;
   top: 75px;
   border: 1px solid #E4E4E4;
   display: flex;
@@ -278,8 +287,8 @@ body {
       position: absolute;
       width: 24px;
       height: 24px;
-      left: 0px;
-      top: 0px;
+      left: 0;
+      top: 0;
       /* brand_color */
       display: flex;
       justify-content: center;
@@ -338,7 +347,7 @@ body {
         .ranking-articles-uploaded-time__icon {
           width: 15px;
           height: 14px;
-          background: url("../images/article/icon.svg");
+          @include time-icon-background;
           background-size: 100% 100%;
           display: inline-block;
         }
@@ -425,9 +434,9 @@ body {
 
         }
         .main-content-article-uploaded-time__icon {
+          @include time-icon-background;
           width: 15px;
           height: 14px;
-          background: url("../images/article/icon.svg");
           background-size: 100% 100%;
           display: inline-block;
         }
@@ -492,7 +501,7 @@ body {
       font-weight: normal;
       font-size: 12px;
       line-height: 22px;
-      padding: 0px 8px 0px 8px;
+      padding: 0 8px 0 8px;
       margin-bottom: 10px;
       display: flex;
       align-items: center;
@@ -513,7 +522,7 @@ body {
     font-weight: normal;
     font-size: 12px;
     line-height: 22px;
-    padding: 0px 8px 0px 8px;
+    padding: 0 8px 0 8px;
     margin-bottom: 10px;
     display: flex;
     align-items: center;
@@ -521,8 +530,8 @@ body {
     border: 1px solid #F1F1F1;
     border-radius: 11px;
     color: #3B3B3B;
-    text-decoration: none;
     margin-right: 10px;
+    @include link-styles;
 
     &:hover {
       background: #F1F1F1;
