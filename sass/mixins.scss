@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+//========== style for index.html ===========
+//========== imported in components.scss =====
+
+@mixin list-style {
+    list-style-type: none;
+}
+
+@mixin link-styles {
+    text-decoration: none;
+}
+
+@mixin vertical-line {
+    content: '';
+    width: 1px;
+    height: 13px;
+    background-color: #bfc9d7;
+    position: absolute;
+}
+
+@mixin logo-background {
+    background: url("../images/Logo.png");
+}
+
+@mixin search-icon-background {
+    background: #3081c9 url("../images/Vector.png") no-repeat no-repeat center;
+}
+
+@mixin time-icon-background {
+    background: url("../images/article/icon.svg");
+}
